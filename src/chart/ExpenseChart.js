@@ -13,12 +13,16 @@ const ExpenseChart=(props)=>{
       {label : 'oct', value : 0},
       {label : 'nov', value : 0},
       {label : 'dec', value : 0},]
-      for (const expenses of props.expenses)
+      //console.log(props.expenses.amount);
+      for (const expense of props.expenses)
       {
-        const index=expenses.date.getMonth();
-        //console.log(index);
-        chartvalue[index].value+=expenses.amount;
+        const index=expense.date.getMonth();
+        
+        chartvalue[index].value+=parseFloat(expense.amount);
+        //console.log( chartvalue[index].value);
+        
       }
+      
 
     return <Chart datapoint={chartvalue}/>
 }

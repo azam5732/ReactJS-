@@ -24,7 +24,7 @@ function ExpenseForm(props)
         const NewDataa={
            key:stitle,title:stitle,amount:samount,date:new Date(sdate)
         };
-       console.log(NewDataa);
+       //console.log(NewDataa);
        props.passingfuntion(NewDataa);
         setsdate('');
         setstitle('');

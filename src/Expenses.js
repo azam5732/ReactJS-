@@ -10,14 +10,15 @@ function Expenses(props)
 {
     const [enteredfilterr,setfilter]=useState('2020')
     const fun=(param)=>{
-       console.log(param);
+     //  console.log(param);
       setfilter(param);
 
     }
     const filterarray=props.item.filter(expenses=>{
-
+         
       return expenses.date.getFullYear().toString()===enteredfilterr;
     });
+  
     return( 
      
       <div>

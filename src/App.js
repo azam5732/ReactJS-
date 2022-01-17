@@ -33,7 +33,7 @@ function App() {
     const [expenses,setExpenses]= useState(dummy_expenses);
   const fun=(parameteer)=>{
 
-    console.log(parameteer);
+    //console.log(parameteer);
     setExpenses(x=>{
       return [parameteer,...x];
     });

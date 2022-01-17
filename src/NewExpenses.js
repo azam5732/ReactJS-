@@ -11,7 +11,7 @@ function NewExpenses(props)
 
          };
          props.passingfun(NewData);
-        console.log(NewData);
+       // console.log(NewData);
 
     }
     const [startedit,setstartedit]=useState(false)
